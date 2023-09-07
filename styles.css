@@ -1,0 +1,177 @@
+    
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+    :root {
+      --white: #f9f9f9;
+      --green: #229395;
+      --green-light: #7acbcd;
+      --black: #36383F;
+      --grey: #85888C;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+    
+    header {      
+      /* Gradiente lineal de arriba hacia abajo */
+      background: linear-gradient(to bottom,rgba(139, 110, 61),rgba(107, 70, 19));
+      color: #fff;
+      text-align: center;
+      padding: 4rem 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 0.5rem 0;
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      padding: 0.5rem 1rem;
+      transition: background-color 0.3s ease;
+    }
+    
+    nav a:hover {
+      background-color: #555;
+    }
+    
+    .content-subtitulo {
+      display: flex;  
+      background-color: rgba(255, 208, 0, 0.925);
+      padding: 2rem;
+      width: 400px;
+      height: 300px;
+      margin-left: 180px;
+      position: absolute;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0);
+    }
+
+    .subtitulo{
+      margin-top: auto;
+      text-align: left;      
+    }
+
+    .slideshow {
+      display: flex;
+      overflow: hidden;      
+      max-height: 300px; /* Cambia la altura máxima del contenedor*/
+      margin: 0 auto; /* Centra horizontalmente */
+    }
+    
+    .slideshow img {
+      width: 100%;
+      height: auto;     
+      object-fit:cover;
+    }
+
+    main {
+      background-color: rgba(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; /* Esto asegura que el main ocupe al menos el 100% de la altura de la ventana. */
+    }
+    
+    .content {
+      padding: 2rem;
+      /* text-align: center; */            
+      max-width: 980px; /* Ajusta el ancho máximo del contenido según tus necesidades */
+      padding: 20px;
+      
+    }
+
+    .subtitulos{
+      font-size: 26px;
+      margin: 0 0 -6px 0;
+    }
+    .boton-leermas{
+      background: rgba(107, 70, 19);
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
+      color: #fff;
+
+    }
+
+    .content-img-inicio{
+      border: solid 8px;
+      height: 130px;
+      width: 550px;
+      overflow: hidden;
+      box-shadow: 0 0 3px rgba(0,0,0,.5);
+      border-color: #fff;
+      margin: 16px 0 12px 0;
+    }
+
+    .ini-cont-img{
+      height: 114px;
+      width: 543px;
+      /* border: solid 8px;
+      box-shadow: 0 0 3px rgba(0,0,0,.5);
+      border-color: #fff; */
+    }
+    .img-inicio{      
+      box-sizing: border-box;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      
+    }
+
+    .resumen{
+      width: 551px;
+      margin-bottom: 14px;
+      font-size: 14px;
+      line-height: 1.5em;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* Estilos para el botón de WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      font-weight: bold;
+      z-index: 1000;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #128C7E;
+    }
+
+    /* Estilos para el footer */
+    footer {
+      /* Gradiente lineal de arriba hacia abajo */
+      background: linear-gradient(to bottom,rgba(139, 110, 61),rgba(107, 70, 19));      
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  
