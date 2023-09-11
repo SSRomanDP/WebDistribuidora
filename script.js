@@ -29,3 +29,18 @@ setInterval(showNextImage, 4000); // Cambiar de imagen cada 3 segundos
 
   fjs.parentNode.insertBefore(js, fjs);
 })(document, 'script', 'tomorrow-sdk');
+
+//Efecto de transicion suave
+// Agregar un controlador de eventos a los enlaces
+const enlaces = document.querySelectorAll('a');
+enlaces.forEach(enlace => {
+  enlace.addEventListener('click', (event) => {
+    event.preventDefault();
+    // Aplicar la transición (por ejemplo, cambio de color de fondo)
+    document.body.style.backgroundColor = 'black';
+    setTimeout(() => {
+      // Redireccionar a la nueva página
+      window.location.href = enlace.href;
+    }, 500); // Ajusta el tiempo de espera según tu transición CSS
+  });
+});

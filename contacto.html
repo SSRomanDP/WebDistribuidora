@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Distribuidora de La Patagonia</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">  
+</head>
+<body>
+  <header>
+    <h1 id="titulo">Distribuidora de la Patagonia S.R.L</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="content">
+      <h2>Información de Contacto</h2>
+      <br>
+      <p>Si desea ponerse en contacto con nosotros, aquí tiene nuestra información de contacto:</p>
+      <br>
+      <ul>
+        <li><h3>Dirección</h3> 
+          <p>Mayor Garayta 295</p>
+          <p>8340, Zapala, Neuquen.</p>
+        </li>
+        <li><h3>Teléfonos</h3>
+          <p>02942-432554</p>
+          <p>2942-664244</p>
+          <p>2942-455316</p>          
+        </li>
+        <a href="tel:+1234567890">
+          <button class="boton-llamar-ahora">Llamar Ahora</button>
+        </a>
+        <li><h3>Correo Electrónico</h3> 
+          <p>distribuidoradelapatagoniasrl@hotmail.com</p>
+        </li>
+      </ul>
+      <br>
+      <p>Estamos disponibles para responder sus preguntas y atender sus necesidades.</p>
+      <br>
+      <!-- Formulario de contacto -->
+      <h2>Formulario de Contacto</h2>
+      <form action="procesar_formulario.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>      
+      <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d625.6415662191531!2d-70.0624757304409!3d-38.902005954556316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDU0JzA3LjIiUyA3MMKwMDMnNDIuNiJX!5e1!3m2!1ses-419!2sar!4v1694383745769!5m2!1ses-419!2sar" width="900" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class=map>
+      
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Distribuidora de la Patagonia S.R.L. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
