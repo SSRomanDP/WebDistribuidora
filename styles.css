@@ -119,11 +119,9 @@
 
     .ini-cont-img{
       height: 114px;
-      width: 543px;
-      /* border: solid 8px;
-      box-shadow: 0 0 3px rgba(0,0,0,.5);
-      border-color: #fff; */
+      width: 543px;      
     }
+
     .img-inicio{      
       box-sizing: border-box;
       height: 100%;
@@ -152,11 +150,16 @@
       box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
       text-decoration: none;
       font-weight: bold;
-      z-index: 1000;
+      z-index: 1000;      
+      display: inline-block;  
     }
 
     .whatsapp-button:hover {
       background-color: #128C7E;
+    }
+
+    .icon-whatsapp{
+      display: none;
     }
 
 /* Estilos para el formulario de contacto */
@@ -237,14 +240,74 @@ footer {
   padding: 10px;
   text-align: center;
   font-size: 14px;
-}
-    
+}  
+
+
+/* Estilos para dispositivos móviles (ancho máximo de 768px) */
 @media screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
+  header {
+    padding: 2rem 0; /* Reduce el espacio superior e inferior en la cabecera */
+  }
+  #titulo{
+    font-size: 16px;
+  }
+  .content-subtitulo {
+    width:min-content; /* Ancho automático en dispositivos móviles */
+    font-size: 8px;
+    max-height: 200px;
+    margin-left: 20px; /* Elimina el margen lateral en dispositivos móviles */
+    padding: 1rem; /* Agrega un espacio interno menor en dispositivos móviles */
   }
 
+  .slideshow {    
+    max-height: 200px; /* Reduce la altura máxima del slideshow */
+  }
+
+  .slideshow img {    
+    height:200px;    
+  }
+
+  .content {
+    max-width: 100%; /* Aprovecha el ancho completo en dispositivos móviles */
+    padding: 10px; /* Espaciado interior reducido en dispositivos móviles */
+  }
+
+  /* Otros ajustes de estilo para dispositivos móviles */
+
+  nav {
+    flex-direction: column; /* Cambia la dirección del menú en dispositivos móviles */
+    align-items: center; /* Centra los elementos del menú en dispositivos móviles */
+  }
+
+  nav a {
+    margin: 0.5rem 0; /* Aumenta el espacio entre elementos del menú en dispositivos móviles */
+  }
+
+  .content-img-inicio {
+    max-width: 100%; /* Aprovecha el ancho completo en dispositivos móviles */
+    max-height: auto; /* Ajusta la altura automáticamente en dispositivos móviles */
+  }
+
+  .map{
+    max-width: 400px;
+    max-height: auto;
+  }
   
+  .whatsapp-button {
+    font-size: 0; /* Oculta el texto al establecer el tamaño de fuente en 0 */
+    padding: 0px;
+  }
+
+  .icon-whatsapp {
+    display: block;
+  }
+
+  .resumen{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    width: 100%;
+  }
+
 }
-  
+
+
