@@ -231,6 +231,33 @@ button[type="submit"]:hover {
   background-color: rgb(156, 104, 31);
 }
 
+/* Estilos para la pagina de productos */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.producto {
+  width: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.producto:hover {
+  transform: scale(1.02);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------ */
 
 /* Estilos para el footer */
 footer {
