@@ -59,6 +59,27 @@
       box-shadow: 5px 5px 10px rgba(0, 0, 0);
     }
 
+    .logo-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .logo img {
+      max-width: 100px; /* Ajusta el tamaño máximo de la imagen del logo según tus necesidades */
+      height: auto;      
+    }
+
+    .logo-text {
+      display: inline-block;
+      vertical-align: middle;      
+      margin-left: 10px; /* Ajusta el espacio entre el logo y el texto según tus necesidades */
+    }
+
     .subtitulo{
       margin-top: auto;
       text-align: left;      
