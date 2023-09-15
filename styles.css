@@ -71,7 +71,8 @@
 
     .logo img {
       max-width: 100px; /* Ajusta el tamaño máximo de la imagen del logo según tus necesidades */
-      height: auto;      
+      height: auto;
+      border-radius: 10%;      
     }
 
     .logo-text {
